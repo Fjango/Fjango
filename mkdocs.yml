@@ -9,27 +9,27 @@ nav:
   - 关于: about.md
   - 投稿指南: contribute-guide.md
   - 经验分享:
-    - share/index.md
+    - 目录: share/index.md
+    - 示例文章：我是怎么学习的: share/sample-article.md
 
 theme:
   name: material
   language: zh
   palette:
-    # 极简白底黑字
-    - media: '(prefers-color-scheme: light)'
-      scheme: default
-      primary: white
-      accent: black
-      toggle:
-        icon: material/brightness-7
-        name: 切换到暗色模式
-    - media: '(prefers-color-scheme: dark)'
-      scheme: default
+    # 浅色模式（白底黑字）
+    - scheme: default
       primary: white
       accent: black
       toggle:
         icon: material/brightness-4
-        name: 切换到亮色模式
+        name: 切换到深色模式
+    # 深色模式（黑底白字）
+    - scheme: slate
+      primary: black
+      accent: white
+      toggle:
+        icon: material/brightness-7
+        name: 切换到浅色模式
 
   features:
     - navigation.instant
