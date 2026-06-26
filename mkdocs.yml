@@ -1,0 +1,72 @@
+site_name: 'Fjango'
+site_url: https://fjango.github.io/fjango/
+site_author: Fjango
+site_description: '经验分享平台 - 分享与发现成长路上的每一步'
+
+# 导航栏
+nav:
+  - 首页: index.md
+  - 关于: about.md
+  - 投稿指南: contribute-guide.md
+  - 经验分享:
+    - share/index.md
+
+theme:
+  name: material
+  language: zh
+  palette:
+    # 极简白底黑字
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: white
+      accent: black
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - media: '(prefers-color-scheme: dark)'
+      scheme: default
+      primary: white
+      accent: black
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+  font:
+    text: 'Noto Sans SC'
+    code: 'JetBrains Mono'
+
+  icon:
+    logo: material/notebook-outline
+
+# 扩展
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+# 插件
+plugins:
+  - search:
+      lang: zh
+
+# 版权
+copyright: '&copy; 2026 Fjango · Powered by MkDocs Material'
