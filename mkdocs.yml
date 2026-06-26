@@ -6,11 +6,7 @@ site_description: '经验分享平台 - 分享与发现成长路上的每一步'
 # 导航栏
 nav:
   - 首页: index.md
-  - 关于: about.md
   - 投稿指南: contribute-guide.md
-  - 经验分享:
-    - 目录: share/index.md
-    - 示例文章：我是怎么学习的: share/sample-article.md
 
 theme:
   name: material
