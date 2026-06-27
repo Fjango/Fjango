@@ -34,6 +34,7 @@ theme:
     - navigation.indexes
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
 
   font:
@@ -63,6 +64,8 @@ markdown_extensions:
 plugins:
   - search:
       lang: zh
+      separator: '[\s\-,:!?。，、：；！？\(\)\[\]{}<>《》""''…\.\/]+'
+      min_search_length: 1
 
 # 版权
 copyright: '&copy; 2026 Fjango · Powered by MkDocs Material'
