@@ -12,17 +12,17 @@ theme:
   name: material
   language: zh
   palette:
-    # 浅色模式（白底黑字）
+    # 浅色模式
     - scheme: default
-      primary: white
-      accent: black
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: 切换到深色模式
-    # 深色模式（黑底白字）
+    # 深色模式
     - scheme: slate
       primary: black
-      accent: white
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: 切换到浅色模式
@@ -43,6 +43,10 @@ theme:
 
   icon:
     logo: material/notebook-outline
+
+# 自定义样式
+extra_css:
+  - stylesheets/extra.css
 
 # 扩展
 markdown_extensions:
